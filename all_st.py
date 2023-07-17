@@ -1,6 +1,7 @@
 import streamlit as st
 st.set_page_config(layout="wide")
 tabsis = st.tabs(["КП каналка", "Частотники", "Автоматика"])
+# ghj
 with tabsis[0]:
     st.header("Программа по формированию КП по бланкам канального оборудования")
     import docx2txt
