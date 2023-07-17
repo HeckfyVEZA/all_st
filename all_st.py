@@ -1,26 +1,4 @@
 import streamlit as st
-from distutils.core import setup
-setup(
-    name='docx2txt'
-)
-setup(
-    name='dadata'
-)
-setup(
-    name='vezamodule-3.4.7.tar.gz'
-)
-setup(
-    name='python-docx'
-)
-setup(
-    name='pandas'
-)
-setup(
-    name='xlsxwriter'
-)
-setup(
-    name='PySimpleGUI'
-)
 st.set_page_config(layout="wide")
 tabsis = st.tabs(["КП каналка", "Частотники", "Автоматика"])
 with tabsis[0]:
