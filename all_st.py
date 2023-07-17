@@ -318,5 +318,3 @@ with tabsis[1]:
                     st.write(item)
                     st.markdown("---")
     st.download_button(label='💾 Скачать файл с частотниками',data=to_excel(DataFrame(df_chast, columns=["Имя файла БЗ", "Маркировка частотника", "Количество"]), HEADER=True, START=0) ,file_name= 'частотники.xlsx')
-with tabsis[2]:
-    __import__("AUTOMATA_WEB").streamlit_version()
