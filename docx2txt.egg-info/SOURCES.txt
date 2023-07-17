@@ -1,0 +1,6 @@
+README.md
+setup.py
+docx2txt.egg-info/PKG-INFO
+docx2txt.egg-info/SOURCES.txt
+docx2txt.egg-info/dependency_links.txt
+docx2txt.egg-info/top_level.txt
