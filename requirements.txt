@@ -12,3 +12,4 @@ PySimpleGUI==4.60.5
 python-docx==0.8.11
 certifi==2023.5.7
 vezamodule-3.4.7.tar.gz
+python-tk
