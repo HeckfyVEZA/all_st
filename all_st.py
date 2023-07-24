@@ -193,8 +193,8 @@ with col[{i}][{j}]:\n
                 checklist[syss].append(None)
     st.download_button(label='💾 Скачать файл для выгрузки в КП',data=to_excel(fintable) ,file_name= 'для кп.xls')
     
-    st.write(all_oborud)
-    st.download_button(label='Разбивка для кп по системам',data=to_excel(DataFrame(all_oborud)), file_name='NNV.xls')
+    # st.write(all_oborud)
+    st.download_button(label='Разбивка для кп по системам',data=to_excel(DataFrame([[None, None, None, None]] + list(map(lambda x: [None] + x, all_oborud)))), file_name='NNV.xls')
     # st.write([len(checklist[chk]) for chk in checklist.keys()])
     try:
         st.download_button(label='💾 Скачать проверочный файл',data=to_excel(DataFrame(checklist), HEADER=True, START=0) ,file_name= 'проверка.xlsx')
