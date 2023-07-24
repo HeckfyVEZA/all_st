@@ -192,6 +192,8 @@ with col[{i}][{j}]:\n
             while len(checklist[syss]) < mlen+1:
                 checklist[syss].append(None)
     st.download_button(label='💾 Скачать файл для выгрузки в КП',data=to_excel(fintable) ,file_name= 'для кп.xls')
+    
+    st.download_button(label='Разбивка для кп по системам',data=to_excel(all_inf), file_name='NNV.xls')
     # st.write([len(checklist[chk]) for chk in checklist.keys()])
     try:
         st.download_button(label='💾 Скачать проверочный файл',data=to_excel(DataFrame(checklist), HEADER=True, START=0) ,file_name= 'проверка.xlsx')
